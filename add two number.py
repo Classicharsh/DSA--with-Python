@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -6,6 +7,10 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+=======
+class Solution:
+    def addTwoNumbers(self, l1, l2):
+>>>>>>> 395e26b3471fbab4db54bae2fc8a49620eafc0fe
         dummy = ListNode(0)
         current = dummy
         carry = 0
@@ -16,9 +21,14 @@ class Solution:
 
             total = val1 + val2 + carry
             carry = total // 10
+<<<<<<< HEAD
             digit = total % 10
 
             current.next = ListNode(digit)
+=======
+
+            current.next = ListNode(total % 10)
+>>>>>>> 395e26b3471fbab4db54bae2fc8a49620eafc0fe
             current = current.next
 
             if l1:
@@ -26,4 +36,8 @@ class Solution:
             if l2:
                 l2 = l2.next
 
+<<<<<<< HEAD
         return dummy.nexts
+=======
+        return dummy.next
+>>>>>>> 395e26b3471fbab4db54bae2fc8a49620eafc0fe
