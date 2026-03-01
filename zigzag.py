@@ -17,4 +17,4 @@ class Solution:
             
             current_row += 1 if going_down else -1
         
-        return "".join(rows)
+        return "".join(rows) 
